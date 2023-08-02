@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=League+Gothic&family=Oswald:wght@200&family=Poppins:wght@500&family=Quicksand:wght@300;600&family=Roboto+Slab&family=Roboto:ital,wght@0,100;1,100&family=Sono:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    
+font-family: 'Roboto Slab', serif;
+}
+
+.main{
+    background:  url('C:\Users\91741\Desktop\reactMillionirieApp\paisa\src\assets\tumblr_5912f16a14a8b8473c216bc649beb47a_3fbfe591_1280.jpg');
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: scale(); */
+}
+
+.correct{
+  animation-name: correct;
+  animation-duration: 3s ;
+}
+
+.wrong{
+    animation-name: wrong;
+    animation-duration: 3s;
+}
+
+@keyframes correct {
+    0%,22%,42%{
+        background: mediumblue;
+    }
+    20%,40%,60%{
+        background: linear-gradient(#0e0124,#22074d);
+    }
+}
+
+@keyframes wrong {
+    0%,22%,42%{
+        background: rgb(225, 23, 23);
+    }
+    20%,40%,60%{
+        background: linear-gradient(red,rgb(207, 16, 16));
+    }
+}
